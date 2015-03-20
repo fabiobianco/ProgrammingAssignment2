@@ -7,7 +7,11 @@ makeCacheMatrix <- function(x = matrix()) {
 
 }
 
-## 1 prima riga inserita via web!
+## 1 riga inserita via web!
+
+## 2 riga inserita da Rstudio!
+
+## 3 riga sempre da Rstudio!
 
 ## Write a short comment describing this function
 
