@@ -2,19 +2,22 @@
 ## functions do
 
 ## Write a short comment describing this function
-
 makeCacheMatrix <- function(x = matrix()) {
-
-}
-
-## 1 riga inserita via web!
-
-## 2 riga inserita da Rstudio!
-
-## 3 riga sempre da Rstudio!
-
-## Write a short comment describing this function
-
-cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'
+ 
+        mat_inv <- NULL
+        print(environment())
+        evn <- environment()
+        print(parent.env(evn))
+        set <- function(y) {
+                x <<- y
+                mat_inv <<- NULL
+        }
+        get <- function() x
+        setsolve <- function(solve) mat_inv <<- solve
+        getsolve <- function() mat_inv
+        getevn<- function() environment()
+        list(set = set, get = get,
+             setsolve = setsolve,
+             getsolve = getsolve,
+             getevn = getevn)
 }
