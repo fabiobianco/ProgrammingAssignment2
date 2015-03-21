@@ -7,7 +7,7 @@
 ## This function creates a special "matrix" 
 ## 
 makeCacheMatrix <- function(x = matrix()) {
- 
+        
         mat_inv <- NULL
         ## print the function environment 
         print(environment())
